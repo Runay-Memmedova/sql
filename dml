@@ -1,0 +1,4 @@
+insert into musteri
+(musteri_id,first_name,last_name,birthdate,payment)
+values('1','Ayten','Aliyeva',to_date('12.10.2001','DD.MM.YYYY','50'));
+commit;
