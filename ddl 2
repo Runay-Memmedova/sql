@@ -1,0 +1,26 @@
+drop table musteri
+create table musteri
+(musteri_id number primary key,
+first_name varchar2(100) ,
+last_name varchar2(100),
+birthdate date,
+payment number);
+commit;
+
+drop table musteri
+
+create table psixoloq
+(psixoloq_id number not null,
+first_name varchar2(100),
+last_name varchar2(100),
+birthdate date,
+primary key(psixoloq_id)
+constraint FK_Psixoloq_Musteri_ID foreign key(musteri_id)
+references muster(musteri_id);
+commit;
+
+ALTER TABLE psixoloq ADD (
+    CONSTRAINT psixoloq_musteri_fk FOREIGN KEY ( musteri_id )
+        REFERENCES musteri ( musteri_id )
+);
+commit;
