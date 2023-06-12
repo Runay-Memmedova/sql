@@ -1,0 +1,21 @@
+insert into musteri
+(musteri_id,first_name,last_name,birthdate,payment)
+values('1','Ayten','Aliyeva',to_date('12.10.2001','DD.MM.YYYY','50'));
+commit;
+insert into musteri 
+(musteri_id,first_name ,last_name,birthdate,payment)
+values('2','Sevda','Vahidova',to_date('08.03.1998',;'DD.MM.YYYY','50'));
+commit;
+
+insert into psixoloq 
+( psixoloq_id,first_name,last_name,birthdate,musteri_id)
+values('[1','Veli','Semedov',to_date('09.07.1987';'DD.MM.YYYY','1'
+commit;
+
+delete from psixoloq
+where psixoloq_id='1';
+commit;
+
+Update psixoloq set first_name='Ali'
+where psixoloq_id='1';
+commit;
