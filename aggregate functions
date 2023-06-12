@@ -1,0 +1,6 @@
+select count(first_name) from employees;
+select sum(salary) from empoyees:
+select min(salary) employes:
+select max( salary), first_name from employees;
+select avg(salary) from empoyees;
+select median(salary) from employees;
