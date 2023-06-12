@@ -1,0 +1,10 @@
+select lower('Employees')from dual;
+ select upper('employees') from dual;
+ select initcap('butun iscilerin siyahasini hazirlayin') from dual
+ Select concat('psixoloq' ,'seansi') from dual
+ select length('butun iscilerin siyahasini hazirlayin') from dual
+select abs(-123)from dual;
+select floor(salary) from employees;
+select round(123.345,2) from dual
+ SELECT first_name, DATE_ADD(Birthdate, INTERVAL 
+1 YEAR) AS BirthTimeModified FROM employees;
