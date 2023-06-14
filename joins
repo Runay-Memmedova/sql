@@ -1,0 +1,11 @@
+Inner joins
+select e.first_name, e.last_name, e.salary, j.job_title
+FROM employees e
+JOIN jobs j
+ON e.job_id = j.job_id
+LIMIT 7;
+ self join
+  select e. salary, e.first_name, d departmnet_id
+  from employees e
+  self join departments d
+  on e.departments_id= d.departments_id;
