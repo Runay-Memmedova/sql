@@ -2,7 +2,6 @@ select first_name, last_name from employees
 union 
 select job_id from jobs;
 
-
 select hire_date from employees
 union all
 select department_id, department_name from departments;
@@ -14,3 +13,11 @@ select* from employees;
 select* from employees
 minus 
 select job_id,job_title from jobs;
+
+select department_id from employees
+union all 
+select department_id from departments
+intersect 
+select department_id from employees
+minus 
+select employee_id from employees;
