@@ -1,3 +1,8 @@
+select count(first_name),salary from employees group by salary;
+ select sum(salary),first_name from employees group by first_name;
+ select min(salary), department_id from empoloyees group by department_id;
+ select avg(salary),first_name from employees group by first_name;
+select max(salary),first_name from employees group by first_name;
 select count(first_name) from employees;
 select sum(salary) from empoyees:
 select min(salary) employes:
