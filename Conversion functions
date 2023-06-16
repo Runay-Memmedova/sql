@@ -1,0 +1,13 @@
+select to_char(sysdate,'DD-MM-YYYY') from dual;
+select to_date(hire_date,'DD-MM-YYYY') from employees;
+select to_number( salary,'99999.9') from employees;
+
+select first_name,salary,case  
+when salary<8000 then 'low'
+when salary<10000 then 'medium' 
+else 'high' end as salarys
+from employees;
+select nvl(department_id,'000') from employees;
+select decode( department_id, 101,'yeni',
+102,'ikinci')result from employees;
+
