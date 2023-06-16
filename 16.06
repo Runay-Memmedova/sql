@@ -1,0 +1,9 @@
+--1.
+  select * from employees where salary>( select avg(salary) from employees);
+  --2.Identify the employees who work in a department with more than 10 employees;
+  select first_name from employees where ( select count(department_id)from employees where count(department_id) >10 );
+  --3.Find employees who have been with the company longer than the average tenure
+  select* from job_history;
+  select e. first_name, extract(j.start_date)- extract(j.end_date) from employees e
+  join job_history j
+  on e.employee_id=j.employee_id;
